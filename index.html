@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Liste de Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Ma Liste de Courses</h1>
+            <div id="purge" onclick="purgeList()" title="Supprimer la liste">🗑️</div>
+        </div>
+        
+        <input type="text" id="new-item" placeholder="Ajouter un élément">
+        <button id="add-item" onclick="addItem()">+</button>
+        
+        <ul id="shopping-list">
+            <!-- Les éléments de la liste seront ajoutés ici par JavaScript -->
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
