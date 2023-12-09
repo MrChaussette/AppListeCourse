@@ -13,8 +13,13 @@
     <div class="container">
 
         <div class="header">
-            <h1>Ma Liste de Courses</h1>
-            <div id="purge" onclick="purgeList()" title="Supprimer la liste">🗑️</div>
+            <h1 id="editable-title">Ma Liste de ...</h1>
+            <button id="edit-title-button" onclick="enableTitleEditing()">🖊️</button>
+            <button id="purge" onclick="purgeList()" title="Supprimer la liste">🗑️</button>
+            <div id="title-editor-container" style="display: none;">
+                <input type="text" id="title-editor" />
+                <button id="save-title-button" onclick="saveTitle()">Enregistrer</button>
+            </div>
         </div>
         
         <input type="text" id="new-item" placeholder="Ajouter un élément">
@@ -23,9 +28,26 @@
         <ul id="shopping-list">
             <!-- Les éléments de la liste seront ajoutés ici par JavaScript -->
         </ul>
-
     </div>
+    
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/MrChaussette/AppListeCourse">AppListeCourse</a> © 2023 by <span property="cc:attributionName">Benjamin PAHU</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+    </footer>
 
+
+    
+
+    <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("/service-worker.js")
+            .then((registration) => {
+              console.log("Service Worker enregistré avec succès :", registration);
+            })
+            .catch((error) => {
+              console.error("Erreur lors de l'enregistrement du Service Worker :", error);
+            });
+        }
+    </script>      
     <script src="script.js"></script>
 </body>
 

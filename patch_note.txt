@@ -1,0 +1,59 @@
+
+Patch Note - Version 1.1.0 (9.12.2023)
+
+Nouvelles fonctionnalités:
+
+Ajout de la fonction hors ligne :
+Les utilisateurs peuvent désormais accéder à l'application même en l'absence de connexion Internet.
+Les données seront synchronisées automatiquement lorsqu'une connexion Internet sera rétablie.
+Améliorations:
+
+Amélioration de la convivialité de l'interface utilisateur sur les petits écrans.
+Optimisation des performances pour une expérience utilisateur plus fluide.
+Correctifs:
+
+Correction d'un problème avec la couleur de fond du champ "new-item" sur les petits écrans.
+Autres changements:
+
+Mise à jour de la gestion des événements pour la touche 'Enter' dans le champ 'new-item'.
+Ajout d'une boîte de dialogue de confirmation pour la suppression de la liste.
+Diverses améliorations de style et de design.
+
+Interface Utilisateur Améliorée :
+
+La couleur de fond du conteneur a été mise à jour pour améliorer la lisibilité.
+Les éléments de la liste ont maintenant une ombre légère pour un meilleur contraste visuel.
+Checkbox Personnalisée :
+
+La checkbox a été stylisée pour une apparence plus moderne.
+La couleur de la checkbox change maintenant lorsqu'elle est cochée.
+Boutons + et - pour Quantité :
+
+Chaque élément de la liste possède désormais des boutons +/- pour ajuster la quantité.
+Les boutons + et - ont des couleurs distinctes pour une meilleure distinction.
+Fond du Corps de la Page :
+
+La couleur de fond du corps de la page a été mise à jour pour correspondre à une teinte plus douce.
+Une image de fond a été ajoutée pour une apparence esthétique.
+Suppression de la Liste :
+
+Ajout d'un bouton "Purge" pour permettre la suppression complète de la liste.
+Une boîte de dialogue de confirmation s'affiche pour éviter toute suppression accidentelle.
+Styles Responsive :
+
+Les styles ont été ajustés pour une meilleure expérience utilisateur sur les petits écrans.
+Optimisation des Événements :
+
+L'événement 'Enter' a été ajouté pour ajouter un élément en appuyant sur la touche 'Enter'.
+Les gestionnaires d'événements ont été optimisés pour améliorer la réactivité.
+Corrections de Bugs :
+
+Correction d'un problème où la couleur du texte ne correspondait pas à la couleur définie dans certains cas.
+Correction d'un problème avec la couleur de fond de la checkbox qui ne se mettait pas à jour correctement.
+Améliorations de Performance :
+
+Les opérations sur les éléments de la liste sont maintenant plus efficaces, améliorant les performances générales de l'application.
+Instructions pour l'Utilisateur :
+
+Utilisez les boutons +/- pour ajuster la quantité des éléments de la liste.
+Utilisez le bouton "Purge" avec précaution, car il supprimera toute la liste.

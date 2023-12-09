@@ -1,25 +1,24 @@
+*  {
+    overflow-wrap: break-word;
+  }
 body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1464 560L0 560 L0 323.93Q57.31 309.24%2c 72 366.54Q91.94 314.48%2c 144 334.42Q160.06 278.49%2c 216 294.55Q281.18 239.73%2c 336 304.91Q432.02 280.94%2c 456 376.96Q471.14 320.1%2c 528 335.23Q549.09 284.32%2c 600 305.41Q666.86 252.26%2c 720 319.12Q794.69 273.81%2c 840 348.49Q892.65 281.14%2c 960 333.8Q1003.06 256.86%2c 1080 299.92Q1126.95 274.87%2c 1152 321.82Q1215.9 313.72%2c 1224 377.62Q1247.95 281.57%2c 1344 305.52Q1395.16 236.69%2c 1464 287.85z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 384.27Q50.85 363.12%2c 72 413.97Q84.58 354.56%2c 144 367.14Q209.83 312.97%2c 264 378.79Q333.95 376.74%2c 336 446.69Q355.5 346.19%2c 456 365.69Q531.44 321.13%2c 576 396.57Q646.06 346.63%2c 696 416.69Q703.66 352.35%2c 768 360.01Q833.78 305.79%2c 888 371.57Q952.73 364.3%2c 960 429.03Q1009.13 358.16%2c 1080 407.3Q1135.71 391.01%2c 1152 446.72Q1168.44 343.16%2c 1272 359.6Q1340.16 307.76%2c 1392 375.92Q1461.99 373.91%2c 1464 443.9z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 496.18Q49.03 425.21%2c 120 474.24Q177.26 459.5%2c 192 516.77Q197.38 450.15%2c 264 455.53Q315.84 387.37%2c 384 439.2Q475.44 410.63%2c 504 502.07Q545.4 423.48%2c 624 464.88Q696.67 417.56%2c 744 490.23Q817.25 443.48%2c 864 516.72Q900.04 432.76%2c 984 468.81Q1053.95 418.76%2c 1104 488.72Q1146.96 411.68%2c 1224 454.64Q1271.99 430.63%2c 1296 478.62Q1350.79 461.41%2c 1368 516.19Q1402.05 430.24%2c 1488 464.29z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 528.58Q27.02 483.6%2c 72 510.62Q98.72 465.34%2c 144 492.05Q227.78 455.83%2c 264 539.6Q287.42 491.02%2c 336 514.44Q417.9 476.35%2c 456 558.25Q502.12 484.37%2c 576 530.48Q658.86 493.34%2c 696 576.19Q719.23 479.42%2c 816 502.65Q863.79 478.44%2c 888 526.24Q965.3 483.54%2c 1008 560.83Q1055.99 536.83%2c 1080 584.82Q1134.75 519.57%2c 1200 574.31Q1253.3 507.61%2c 1320 560.91Q1371.87 492.77%2c 1440 544.64Q1453.91 486.55%2c 1512 500.46z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-size: cover;
     background-repeat: no-repeat;
-
-    
     font-family: 'Arial', sans-serif;
-    
     margin: 0;
     padding: 0;
     color: #f7f6f6; /* Couleur du texte principale */
-    background-color: #ffffff; /* Couleur de fond douce */
 }
 
-
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #2d2d2dce; /* Couleur de fond du conteneur */
+    max-width: 960px;
+    margin: 20px auto !important;
+    background-color: #363636e6; /* Couleur de fond du conteneur */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
 }
 
 #shopping-list {
@@ -28,7 +27,7 @@ body {
 }
 
 li {
-    background-color: #fff; /* Couleur de fond des éléments de la liste */
+    background-color: #4d4d4d; /* Couleur de fond des éléments de la liste */
     border-radius: 4px;
     margin: 10px 0 15px;
     padding: 15px;
@@ -38,15 +37,15 @@ li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre pour chaque élément */
 }
 
-li,p{
-    color:#2d2d2d;
+li, p {
+    color: #f7f6f6;
 }
 
 .checkbox {
     appearance: none;
     width: 24px;
     height: 24px;
-    border: 2px solid #ddd; /* Couleur de la bordure de la checkbox */
+    border: 2px solid #666; /* Couleur de la bordure de la checkbox */
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
@@ -76,22 +75,23 @@ span {
     font-size: 1.2em;
     flex-grow: 1;
     margin: 0 10px;
-    word-break: break-all;
-    color: #333; /* Couleur du texte dans les éléments */
 }
-li p{
+
+li p {
     font-size: 1.5em;
     margin: 0 10px;
 }
-li button{
+
+li button {
     padding: 0;
     height: 36px;
-    width: 36px ;
+    width: 36px;
     font-size: x-large;
 }
+
 button,
 #new-item {
-    font-size: large;
+    font-size: 16px;
     padding: 12px 16px;
     border: none;
     border-radius: 8px;
@@ -104,8 +104,6 @@ button {
     color: #fff;
 }
 
-
-
 #new-item { /* Couleur rouge pour le champ 'new-item' */
     color: #2d2d2d;
 }
@@ -114,15 +112,14 @@ button {
     font-size: x-large;
     margin-left: 5px;
     background-color: #d9534f; /* Couleur jaune pour le bouton delete-item */
+    opacity: 1; /* Rend le bouton de suppression toujours visible */
+    transition: opacity 0.3s ease-in-out;
 }
 
-/* Styles spécifiques pour les boutons + et - */
-button[onclick^="increaseValue"] {
-    background-color: #5bc0de; /* Couleur bleu clair pour le bouton + */
-}
 
-button[onclick^="decreaseValue"] {
-    background-color: #d9534f; /* Couleur rouge pour le bouton - */
+
+li.show-delete-button .delete-item {
+    opacity: 1; /* Rend le bouton de suppression visible lorsque la classe show-delete-button est présente sur l'élément de liste */
 }
 
 .header {
@@ -148,19 +145,115 @@ button[onclick^="decreaseValue"] {
 }
 
 #purge:hover {
-    shadow: 2px chocolate; /* Changement de couleur au survol */
+    box-shadow: 2px 2px 5px chocolate; /* Changement de couleur au survol */
     filter: brightness(1.2);
 }
 
-/* Styles pour les petits écrans */
+footer {
+    background-color: #2d2d2d;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f7f6f6;
+}
+
+footer a:hover {
+    color: #5bc0de;
+    transition-duration: 0.5s;
+}
+
+p {
+    margin: 0;
+}
+
+
+.checked {
+    opacity: 0.6; /* Opacité réduite pour les éléments cochés */
+    filter: blur(2px); /* Flou pour les éléments cochés */
+}
+
+
+/* Ajouter du style pour le champ de texte et le bouton "Enregistrer" */
+#title-editor-container {
+    display: flex;
+    align-items: center;
+}
+
+#title-editor {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: inherit;
+}
+
+#save-title-button {
+    padding: 5px 10px;
+    font-size: inherit;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
     .container {
-        max-width: 100%;
+        padding: 10px;
     }
 
-    button.delete-list,
-    #purge {
-        display: block;
-        margin-top: 20px;
+    .header,
+    .button-container {
+        
+        align-items: stretch;
     }
+
+    #edit-title-button,
+    #purge {
+        margin: 3px;
+        padding: 8px;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+#edit-title-button,
+#purge {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, filter 0.3s;
+}
+
+#edit-title-button:hover,
+#purge:hover {
+    box-shadow: 2px 2px 5px rgb(43, 43, 43);
+    filter: brightness(1.2);
+}
+
+footer {
+    background-color: #2d2d2d;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f7f6f6;
+}
+
+footer a:hover {
+    color: #5bc0de;
+    transition-duration: 0.5s;
 }
